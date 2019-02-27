@@ -17,6 +17,14 @@ const sampleData = [
 ];
 
 <Radio data={sampleData} textStyle={{ color: "blue" }} background="red" />;
+
+// class component에서 이부분 콘솔 수정하여 사용
+onClick = (index, data) => {
+    this.setState({
+      checked: index
+    });
+    console.log(data);
+  };
 ```
 
 ![sample](./src/sample.png)
