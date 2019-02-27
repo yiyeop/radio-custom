@@ -2,21 +2,34 @@ import React, { Component } from "react";
 import "./App.css";
 import Radio from "./RadioGroup";
 
+const sampleData = [
+  { group: "A", name: "옵션1", price: 1000 },
+  { group: "A", name: "옵션2", price: 500 }
+];
+
+const sampleData2 = [
+  { group: "B", name: "옵션1", price: 1000 },
+  { group: "B", name: "옵션2", price: 500 }
+];
+
+const sampleData3 = [
+  { group: "C", name: "옵션1", price: 1000 },
+  { group: "C", name: "옵션2", price: 500 }
+];
+
 class App extends Component {
   render() {
-    const sampleOptions = {
-      name: "사이즈 선택",
-      radio: true,
-      option: [
-        { label: "소", value: 0, default: true },
-        { label: "중", value: 1500 },
-        { label: "대", value: 3000 }
-      ]
-    };
-
     return (
       <div className="App">
-        <Radio options={sampleOptions} />
+        <Radio data={sampleData} />
+        <p />
+        <Radio data={sampleData2} background="green" />
+        <p />
+        <Radio
+          data={sampleData3}
+          textStyle={{ color: "blue" }}
+          background="red"
+        />
       </div>
     );
   }
