@@ -18,7 +18,7 @@ const sampleData = [
 <Radio data={sampleData} textStyle={{ color: "blue" }} background="red" />;
 ```
 
-![sample](./sample.png)
+![sample](./src/sample.png)
 
 #### Props
 
