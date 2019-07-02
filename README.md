@@ -1,12 +1,3 @@
-## react-radio-custom
-내가쓸려고만든거임.. 
-
-#### Description
-
-1. 장바구니 옵션용 라디오 버튼 그룹
-2. 체크박스 및 같은 라인 클릭시 체크박스 선택되게끔
-3. 박스 색깔 변경 가능
-4. 텍스트 스타일 변경 가능
 
 #### Usage
 
@@ -26,10 +17,3 @@ onClick = (index, data) => {
     console.log(data);
   };
 ```
-
-![sample](./src/sample.png)
-
-#### Props
-
-- textStyle: Object
-- background: string
